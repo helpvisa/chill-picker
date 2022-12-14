@@ -1,0 +1,82 @@
+/* reusable stylings and animations */
+:root {
+  --col-bg: #363023;
+  --col-bg-dark: #242017;
+
+  --col-font-light: #fff0c6;
+}
+
+@keyframes hoverMouse {
+  from {filter: brightness(1.0);}
+  to {filter: brightness(1.3);}
+}
+@keyframes unhoverMouse {
+  from {filter: brightness(1.3);}
+  to {filter: brightness(1.0);}
+}
+
+/* wildcard */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  color: var(--col-font-light);
+}
+
+/* page configuration */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: var(--col-bg);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* applet configuration */
+.welcome {
+  font-size: 4.2vw;
+  text-align: center;
+  padding: 10px;
+  border-bottom: solid;
+  border-radius: 1vw;
+  border-width: 0.5vw;
+}
+
+.button {
+  animation-name: unhoverMouse;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  font-size: 2vw;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--col-font-light);
+  color: var(--col-bg);
+  border-radius: 1vw;
+  border-width: 0.5vw;
+  border-style: solid;
+  border-color: var(--col-bg-dark);
+}
+
+.button:hover {
+  animation-name: hoverMouse;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+/* footer configuration */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
