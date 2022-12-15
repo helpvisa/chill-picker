@@ -26,6 +26,10 @@
   from {opacity: 0; position: relative; bottom: -100vh;}
   to {opacity: 1; position: relative; bottom: 0px;}
 }
+@keyframes disappearTop {
+  from {opacity: 1; position: relative; top: 0px;}
+  to {opacity: 0; position: relative; top: -100vh;}
+}
 
 /* animation classes */
 .transitionOut {
@@ -36,6 +40,9 @@
 }
 .transitionInBottom {
   animation: appearBottom 0.5s both;
+}
+.transitionOutTop {
+  animation: disappearTop 0.5s both;
 }
 
 /* wildcard */
@@ -65,9 +72,11 @@
 
 /* applet configuration */
 .header-text {
+  width: fit-content;
   font-size: 4.2vw;
   text-align: center;
   padding: 10px;
+  margin: auto;
   border-bottom: solid;
   border-radius: 1vw;
   border-width: 0.5vw;
@@ -83,6 +92,16 @@
   text-align: center;
   text-shadow: 0px 0px 20px #d48e0b;
   padding: 20px 0px;
+}
+.p-mod {
+  font-size: 2.5vw;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 0px 0px 20px #19c3da;
+  padding: 20px 0px;
+}
+.text-margin {
+  margin: 0px 20px;
 }
 
 .button {
@@ -106,9 +125,35 @@
 
 /* footer configuration */
 .footer-container {
+  font-size: 2vw;
   display: flex;
   justify-content: center;
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+/* image customization */
+img {
+  display: flex;
+  margin: auto;
+  width: 90%;
+}
+
+/*---------------------------------------------------------------*/
+/* media queries for differing screen sizes, largest to smallest */
+@media screen and (max-height: 440px) {
+  img {
+    width: 80%;
+  }
+}
+@media screen and (max-height: 400px) {
+  img {
+    width: 65%;
+  }
+}
+@media screen and (max-height: 360px) {
+  img {
+    width: 50%;
+  }
 }

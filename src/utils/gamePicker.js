@@ -19,4 +19,14 @@ const pickOption = (game) => {
   return game.options[index];
 }
 
-module.exports = { pickGame, pickOption };
+const pickMod = (game) => {
+  if (!game) {
+    return;
+  }
+  // generate an index
+  const index = Math.floor(Math.random() * game.mod.length);
+  // pick and return an option
+  return game.mod[index];
+}
+
+module.exports = { pickGame, pickOption, pickMod };

@@ -10,7 +10,7 @@ import RollDisplay from './components/RollDisplay';
 import Image from './components/Image';
 // import our helper functions
 import { welcomeFunc } from './utils/welcomeText';
-import { pickGame, pickOption } from './utils/gamePicker';
+import { pickGame, pickOption, pickMod } from './utils/gamePicker';
 import { pickImage } from './utils/imagePicker';
 
 // render main page
@@ -19,6 +19,7 @@ function App() {
   const [welcomeText, setWelcomeText] = useState(null); // generate our welcome text
   const [game, setGame] = useState(null); // generate our game
   const [option, setOption] = useState(null); // generate our game option
+  const [mod, setMod] = useState(null); // generate our game mod
   const [img, setImg] = useState(null); // set a reference to our image
 
   const [appRolled, setAppRolled] = useState(false);
@@ -34,6 +35,16 @@ function App() {
   const runOption = () => {
     setOption(pickOption(game));
   }
+  const runMod = () => {
+    // roll a chance to add a mod
+    const chance = Math.random() * 100;
+    if (chance > 50) {
+      setMod(pickMod(game));
+    } else
+    {
+      setMod(null);
+    }
+  }
   const runImage = () => {
     if (game) {
       setImg(pickImage(game.game, option));
@@ -41,9 +52,10 @@ function App() {
   }
 
   // manage our useEffects
-  useEffect(runWelcome, []);
+  useEffect(runWelcome, [showWelcome]);
   useEffect(runGame, [showWelcome]);
   useEffect(runOption, [game]);
+  useEffect(runMod, [option]);
   useEffect(runImage, [option]);
 
 
@@ -54,15 +66,19 @@ function App() {
         {showWelcome ?
           <div
             className={!appRolled ? 'main-container transitionIn' : 'main-container transitionOut'}
-            onAnimationEnd={() => { if (appRolled) setShowWelcome(false) }}
+            onAnimationEnd={() => { if (appRolled) setShowWelcome(false) } }
           >
             <Welcome welcomeText={welcomeText}></Welcome>
-            <Button setAppRolled={setAppRolled}></Button>
+            <Button showWelcome={showWelcome} setAppRolled={setAppRolled} appRolled={appRolled}></Button>
           </div>
           :
-          <div className="main-container transitionInBottom">
-            <RollDisplay game={game.game} option={option}></RollDisplay>
+          <div
+            className={appRolled ? 'main-container transitionInBottom' : 'main-container transitionOutTop'}
+            onAnimationEnd={() => { if (!appRolled) setShowWelcome(true) } }
+          >
+            <RollDisplay game={game.game} option={option} mod={mod}></RollDisplay>
             <Image src={img}></Image>
+            <Button showWelcome={showWelcome} setAppRolled={setAppRolled} appRolled={appRolled}></Button>
           </div>
         }
       </main>

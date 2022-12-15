@@ -1,9 +1,13 @@
 import React from 'react';
 
-function Button({ setAppRolled }) {
+function Button({ showWelcome, setAppRolled, appRolled }) {
+  function clickHandler() {
+    setAppRolled(!appRolled);
+  }
+
   return (
     <div>
-      <button className="button" onClick={() => setAppRolled(true)}>Let's Roll!</button>
+      <button className="button" onClick={clickHandler}>{showWelcome ? "Let's Roll!" : "Again?"}</button>
     </div>
   )
 }

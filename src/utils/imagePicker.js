@@ -19,9 +19,6 @@ const pickImage = (game, option) => {
         case "on Hard":
           img = "slice-hard.png";
           break;
-        case "in demo mode":
-          img = "slice-demo.png";
-          break;
         default:
           img = "slicendice.png";
       }
@@ -54,7 +51,6 @@ const pickImage = (game, option) => {
   }
 
   // return our image string
-  console.log(img);
   return img;
 }
 
