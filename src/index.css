@@ -14,6 +14,29 @@
   from {filter: brightness(1.3);}
   to {filter: brightness(1.0);}
 }
+@keyframes disappear {
+  from {opacity: 1; position: relative; right: 0px;}
+  to {opacity: 0; position: relative; right: -100vw;}
+}
+@keyframes appear {
+  from {opacity: 0; position: relative; left: -100vw;}
+  to {opacity: 1; position: relative; left: 0px;}
+}
+@keyframes appearBottom {
+  from {opacity: 0; position: relative; bottom: -100vh;}
+  to {opacity: 1; position: relative; bottom: 0px;}
+}
+
+/* animation classes */
+.transitionOut {
+  animation: disappear 0.5s both;
+}
+.transitionIn {
+  animation: appear 0.5s both;
+}
+.transitionInBottom {
+  animation: appearBottom 0.5s both;
+}
 
 /* wildcard */
 * {
@@ -30,6 +53,7 @@
   justify-content: flex-start;
   min-height: 100vh;
   background-color: var(--col-bg);
+  overflow: hidden;
 }
 
 .main-container {
@@ -50,9 +74,7 @@
 }
 
 .button {
-  animation-name: unhoverMouse;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
+  animation: unhoverMouse 0.25s both;
   font-size: 2vw;
   text-align: center;
   padding: 20px;
@@ -66,9 +88,7 @@
 }
 
 .button:hover {
-  animation-name: hoverMouse;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
+  animation: hoverMouse 0.25s both;
   cursor: pointer;
 }
 

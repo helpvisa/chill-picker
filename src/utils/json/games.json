@@ -1,0 +1,10 @@
+[
+  {
+    "game": "Slice N' Dice",
+    "options": ["on Easy", "on Normal", "on Hard", "on RNG mode", "in demo mode"]
+  },
+  {
+    "game": "Slay the Spire",
+    "options": ["as the Ironchad", "as the Silent", "as the Defect", "as the Watcher", "the daily run"]
+  }
+]

@@ -1,11 +1,9 @@
 import React from 'react';
-// import our helper function
-import { welcomeFunc } from '../../utils/welcomeText';
 
-function Welcome() {
+function Welcome({ welcomeText }) {
   return (
     <div>
-      <h1 className="welcome">{welcomeFunc()}</h1>
+      <h1 className="welcome">{welcomeText}</h1>
     </div>
   )
 }
