@@ -45,8 +45,20 @@ const pickImage = (game, option) => {
           break;
       }
       break;
+    case "Steam":
+      img = "steam.png";
+      break;
+    case "Minecraft":
+      img = "minecraft.png";
+      break;
+    case "Switch":
+      img = "switch.png";
+      break;
+    case "Hunt: Showdown":
+      img = "hunt.png";
+      break;
     default:
-      img = "slicendice.png";
+      img = "alex.png";
       break;
   }
 

@@ -137,7 +137,9 @@
 img {
   display: flex;
   margin: auto;
-  width: 90%;
+  width: auto;
+  height: auto;
+  max-height: 20vh;
 }
 
 /*---------------------------------------------------------------*/

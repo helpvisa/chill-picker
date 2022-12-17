@@ -19,8 +19,11 @@ const pickOption = (game) => {
   return game.options[index];
 }
 
-const pickMod = (game) => {
+const pickMod = (game, option) => {
   if (!game) {
+    return;
+  }
+  if (game.game == "Switch" && option != "Donkey Kong Country Returns") {
     return;
   }
   // generate an index

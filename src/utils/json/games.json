@@ -12,7 +12,11 @@
       "and beat the game in under 45 minutes",
       "and *really* take your time",
       "and start with a Custom Party",
-      "without rerolling"
+      "without rerolling",
+      "and take the statue every time it shows up",
+      "and beat the game with zero deaths",
+      "and screenshot your high score to rub in Nathan's face",
+      "and try to get on the leaderboards"
     ]
   },
   {
@@ -25,12 +29,17 @@
       "the daily run"
     ],
     "mod": [
+      "on Ascension 20 (if you've unlocked it)",
       "on Ascension 15",
       "on Ascension 10",
       "on Ascension 5",
       "with a 5 card deck",
       "while taking one card from every drop",
-      "without using the shop"
+      "without using the shop",
+      "using only attack cards",
+      "without any power cards",
+      "without using any potions",
+      "and beat the game in under 15 minutes"
     ]
   },
   {
@@ -39,8 +48,55 @@
       "a game from your library you haven't yet opened",
       "an old favourite again",
       "a quick round of Wingman... solo queue ;) ",
-      "a cheeky lil' round of Team Fortress 2"
+      "a cheeky lil' round of Team Fortress 2",
+      "something you tried and bounced off of"
     ],
     "mod": [""]
+  },
+  {
+    "game": "Minecraft",
+    "options": [
+      "creative mode and ",
+      "survival mode and "
+    ],
+    "mod": [
+      "make a phallic monument",
+      "craft a luxurious castle",
+      "build a dirt hut which tunnels to your gnomish fortress",
+      "try to track down a rare record",
+      "make a rail system to connect your townships",
+      "live life nomadically, blessing the world with shacks as you journey",
+      "blow some shit up with TNT",
+      "you probably don't really want to play Minecraft, do you?"
+    ]
+  },
+  {
+    "game": "Switch",
+    "options": [
+      "a few rounds of Tetris 99",
+      "some challenge maps in Mario and Rabbids",
+      "Donkey Kong Country Returns",
+      "Smash Bros. 2v2s",
+      "Smash Bros. 4 player FFA",
+      "a few Smash Bros. challenges"
+    ],
+    "mod": [
+      "(and don't forget all the Kong letters)"
+    ]
+  },
+  {
+    "game": "Hunt: Showdown",
+    "options": [
+      "a round of Quickplay",
+      "trios with the lads"
+    ],
+    "mod": [
+      "and use the beetle drone"
+    ]
+  },
+  {
+    "game": "Alex",
+    "options": "Something that makes you happy",
+    "mod": ", really happy"
   }
 ]
