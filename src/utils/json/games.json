@@ -1,12 +1,46 @@
 [
   {
     "game": "Slice N' Dice",
-    "options": ["on Easy", "on Normal", "on Hard"],
-    "mod": ["in demo mode", "in RNG mode", "and beat the game in under 50 minutes", "and start with a Custom Party", "without rerolling"]
+    "options": [
+      "on Easy",
+      "on Normal",
+      "on Hard"
+    ],
+    "mod": [
+      "in demo mode",
+      "in RNG mode",
+      "and beat the game in under 45 minutes",
+      "and *really* take your time",
+      "and start with a Custom Party",
+      "without rerolling"
+    ]
   },
   {
     "game": "Slay the Spire",
-    "options": ["as the Ironchad", "as the Silent", "as the Defect", "as the Watcher", "the daily run"],
-    "mod": ["on Ascension 15", "on Ascension 10", "on Ascension 5", "with a 5 card deck", "while taking one card from every drop", "without using the shop"]
+    "options": [
+      "as the Ironchad",
+      "as the Silent",
+      "as the Defect",
+      "as the Watcher",
+      "the daily run"
+    ],
+    "mod": [
+      "on Ascension 15",
+      "on Ascension 10",
+      "on Ascension 5",
+      "with a 5 card deck",
+      "while taking one card from every drop",
+      "without using the shop"
+    ]
+  },
+  {
+    "game": "Steam",
+    "options": [
+      "a game from your library you haven't yet opened",
+      "an old favourite again",
+      "a quick round of Wingman... solo queue ;) ",
+      "a cheeky lil' round of Team Fortress 2"
+    ],
+    "mod": [""]
   }
 ]
