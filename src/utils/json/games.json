@@ -16,7 +16,8 @@
       "and take the statue every time it shows up",
       "and beat the game with zero deaths",
       "and screenshot your high score to rub in Nathan's face",
-      "and try to get on the leaderboards"
+      "and try to get on the leaderboards",
+      "in shortcut mode"
     ]
   },
   {
@@ -91,12 +92,22 @@
       "trios with the lads"
     ],
     "mod": [
-      "and use the beetle drone"
+      "and use the beetle drone",
+      "and abuse solo-revive"
     ]
   },
   {
+    "game": "Tabletop Simulator",
+    "options": [
+      "a jolly game of Bohnanza",
+      "some Splendor with the gang",
+      "a round of Carcasonne"
+    ],
+    "mod": [""]
+  },
+  {
     "game": "Alex",
-    "options": "Something that makes you happy",
-    "mod": ", really happy"
+    "options": ["something that makes you happy"],
+    "mod": [", really happy"]
   }
 ]

@@ -36,13 +36,15 @@ function App() {
     setOption(pickOption(game));
   }
   const runMod = () => {
-    // roll a chance to add a mod
-    const chance = Math.random() * 100;
-    if (chance > 50 || game.game == "Minecraft" || option == "Donkey Kong Country Returns") {
-      setMod(pickMod(game, option));
-    } else
-    {
-      setMod(null);
+    if (game) {
+      // roll a chance to add a mod
+      const chance = Math.random() * 100;
+      if (chance > 50 || game.game === "Minecraft" || option === "Donkey Kong Country Returns") {
+        setMod(pickMod(game, option));
+      } else
+      {
+        setMod(null);
+      }
     }
   }
   const runImage = () => {

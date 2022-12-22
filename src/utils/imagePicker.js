@@ -21,6 +21,7 @@ const pickImage = (game, option) => {
           break;
         default:
           img = "slicendice.png";
+          break;
       }
       break;
     case "Slay the Spire":
@@ -56,6 +57,9 @@ const pickImage = (game, option) => {
       break;
     case "Hunt: Showdown":
       img = "hunt.png";
+      break;
+    case "Tabletop Simulator":
+      img = "tabletopsim.png"
       break;
     default:
       img = "alex.png";

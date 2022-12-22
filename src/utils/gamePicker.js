@@ -23,7 +23,7 @@ const pickMod = (game, option) => {
   if (!game) {
     return;
   }
-  if (game.game == "Switch" && option != "Donkey Kong Country Returns") {
+  if (game.game === "Switch" && option !== "Donkey Kong Country Returns") {
     return;
   }
   // generate an index
