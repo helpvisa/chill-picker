@@ -1,25 +1,28 @@
 {
   "files": {
     "main.css": "/chill-picker/static/css/main.bf14e688.css",
-    "main.js": "/chill-picker/static/js/main.4031efc1.js",
+    "main.js": "/chill-picker/static/js/main.df7e3af8.js",
     "static/js/787.8b941249.chunk.js": "/chill-picker/static/js/787.8b941249.chunk.js",
     "static/media/alex.png": "/chill-picker/static/media/alex.3e29f0feb6a3ab215de3.png",
     "static/media/hunt.png": "/chill-picker/static/media/hunt.05294c029e1fc0f58bb4.png",
     "static/media/slay.png": "/chill-picker/static/media/slay.13f7b86d8d50a72e62ef.png",
+    "static/media/tabletopsim.png": "/chill-picker/static/media/tabletopsim.46f613bf644983076ce9.png",
     "static/media/switch.png": "/chill-picker/static/media/switch.ce41f4d4844eda815810.png",
     "static/media/minecraft.png": "/chill-picker/static/media/minecraft.91cb58636beee71c4988.png",
+    "static/media/diceroll.ogg": "/chill-picker/static/media/diceroll.60f7385e8cae1d7bddd9.ogg",
     "static/media/watcher.png": "/chill-picker/static/media/watcher.e50ce0282850d9f59d27.png",
     "static/media/steam.png": "/chill-picker/static/media/steam.fc2889b8af92d2a73ace.png",
     "static/media/defect.png": "/chill-picker/static/media/defect.ebe857684f9d5c8aef63.png",
     "static/media/ironchad.png": "/chill-picker/static/media/ironchad.7a3945575535b225ba90.png",
     "static/media/silent.png": "/chill-picker/static/media/silent.20790aa7c7c0cee57b25.png",
+    "static/media/swoosh.ogg": "/chill-picker/static/media/swoosh.067f6712d38fcbc1843a.ogg",
     "index.html": "/chill-picker/index.html",
     "main.bf14e688.css.map": "/chill-picker/static/css/main.bf14e688.css.map",
-    "main.4031efc1.js.map": "/chill-picker/static/js/main.4031efc1.js.map",
+    "main.df7e3af8.js.map": "/chill-picker/static/js/main.df7e3af8.js.map",
     "787.8b941249.chunk.js.map": "/chill-picker/static/js/787.8b941249.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf14e688.css",
-    "static/js/main.4031efc1.js"
+    "static/js/main.df7e3af8.js"
   ]
 }
